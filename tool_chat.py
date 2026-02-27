@@ -29,7 +29,7 @@ def get_weather(city: str) -> str:
 
 tools = [add_numbers, get_weather]
 
-llm = ChatOllama(model="qwen3:14b")
+llm = ChatOllama(model="lfm2:24b")
 llm_with_tools = llm.bind_tools(tools)
 SYSTEM_PROMPT = "You must always respond in Korean only. 반드시 한국어로만 답변하세요. 영어로 절대 답변하지 마세요."
 
